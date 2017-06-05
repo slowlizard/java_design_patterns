@@ -8,6 +8,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+       Invoker  invoker=new Invoker();
+       invoker.setCommand(new CreateCommand(new Receiver()));
+       invoker.run();
     }
 }
